@@ -1,0 +1,59 @@
+﻿@model ExeAdrielDeboraIV.Models.Cliente
+
+@{
+    ViewBag.Title = "Cliente";
+}
+
+<h2>@ViewBag.Titulo</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar novo Cliente", "Cadastrar", "Cliente")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeCLi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CPF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Login)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataCadastro)
+        </th>
+        <th></th>
+    </tr>
+
+
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.IdCli)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.NomeCLi)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.CPF)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Login)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.DataCadastro)
+        </td>
+
+    </tr>
+
+
+</table>
